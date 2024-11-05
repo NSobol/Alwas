@@ -1,0 +1,64 @@
+.subscription-form__info .info{
+    margin-top: -20px;
+    width: 100%;
+    min-height: 20px;
+    margin-bottom: 10px;
+}
+.subscription-form__info .errors{
+    color: red;
+}
+.subscription-form__info .success{
+    color: green;
+}
+.subscription-form, .subscription-form img{
+    min-height: 545px;
+}
+.main-banner{
+    background: #000;
+}
+
+.product-gallery__item--video > * {
+    cursor: pointer;
+}
+.product-gallery__item-play {
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    z-index: 5;
+    transition: 0.1s;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.product-gallery__item-play.is-hidden {
+    opacity: 0;
+}
+.product-gallery__item-play svg {
+    width: 30px;
+    height: 30px;
+    transform: translateX(10%);
+}
+
+@media screen and (max-width: 1199px) {
+    .product-gallery__item-play {
+        display: none;
+    }
+}
+.catalog-root-section{
+    margin-bottom:50px;
+}
+
+.fancybox-bg {
+    background-color: #ffffff;
+}
+
+.fancybox-inner {
+    margin-right: var(--scrollbar);
+    margin-left: var(--scrollbar);
+}

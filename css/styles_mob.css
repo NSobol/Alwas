@@ -1,0 +1,31 @@
+@media screen and (max-width: 375px) {
+  .ss-grid {
+    display: grid;
+    grid-template-columns: 166px 166px !important;
+    grid-template-rows: 166px 166px 166px !important;
+    gap: 11px 11px;
+    grid-template-areas:
+      'ss-sets ss-pans'
+      'ss-buckets ss-roasters'
+      'ss-cauldrons ss-ideas';
+  }
+
+  .ss-sets {
+    grid-area: ss-sets;
+  }
+  .ss-pans {
+    grid-area: ss-pans;
+  }
+  .ss-buckets {
+    grid-area: ss-buckets;
+  }
+  .ss-roasters {
+    grid-area: ss-roasters;
+  }
+  .ss-cauldrons {
+    grid-area: ss-cauldrons;
+  }
+  .ss-ideas {
+    grid-area: ss-ideas;
+  }
+}

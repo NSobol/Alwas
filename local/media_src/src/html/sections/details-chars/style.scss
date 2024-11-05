@@ -1,0 +1,165 @@
+.details-chars {
+    padding-bottom: 20px;
+
+    @include media-md('down') {
+        padding-bottom: 10px;
+    }
+}
+
+.dtc {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    padding: 120px 0;
+    background-color: $light;
+    border-radius: 8px;
+
+    @include media-xl('down') {
+        padding: 60px 0;
+    }
+
+    @include media-md('down') {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 30px 14px;
+    }
+}
+
+.dtc-pic,
+.dtc-inf {
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 50%;
+    flex-shrink: 0;
+
+    @include media-md('down') {
+        flex-basis: unset;
+        width: 100%;
+        padding: 0;
+    }
+}
+
+.dtc-pic {
+    border-right: 1px solid rgba(0, 0, 0, .1);
+
+    @include media-md('down') {
+        padding-bottom: 40px;
+        border-right: none;
+    }
+
+    &__el {
+        width: 100%;
+        max-width: 483px;
+    }
+}
+
+.dtc-inf {
+    &__inner {
+        max-width: 570px;
+        width: 100%;
+    }
+
+    &__heading {
+        margin-bottom: 30px;
+        font-size: 30px;
+
+        @include media-xl('down') {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.dtc-table {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+
+    @include media-xl('down') {
+        font-size: 14px;
+    }
+
+    th,
+    td {
+        padding: 15px 0;
+        vertical-align: middle;
+        border-bottom: 1px solid rgba($color: #000000, $alpha: .1);
+    }
+
+    th {
+        text-align: left;
+        color: $gray;
+    }
+
+    td {
+        text-align: right;
+    }
+
+    tr {
+        &:first-child {
+
+            td,
+            th {
+                border-top: 2px solid rgba($color: #000000, $alpha: .1);
+            }
+        }
+    }
+}
+
+.dtc-more-tables {
+
+    &__panel {
+        display: none;
+
+        .dtc-table {
+            tr {
+                &:first-child {
+
+                    td,
+                    th {
+                        border-top: none;
+                    }
+                }
+            }
+        }
+    }
+
+    &__more {
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+
+        @include media-xl('down') {
+            font-size: 14px;
+        }
+
+        &>svg {
+            margin-right: 15px;
+            width: 50px;
+            height: 50px;
+            color: $dark;
+
+            @include media-xl('down') {
+                width: 40px;
+                height: 40px;
+                margin-right: 10px;
+            }
+
+            .minus {
+                opacity: 1;
+                transition: 400ms ease-in-out opacity;
+            }
+        }
+
+        &.is-open {
+            svg {
+                .minus {
+                    opacity: 0;
+                }
+            }
+        }
+    }
+}

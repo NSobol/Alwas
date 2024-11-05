@@ -1,0 +1,72 @@
+.press-item {
+  display: block;
+  text-decoration: none;
+  color: $black;
+  transition: color $transition linear;
+
+  &__photo {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-bottom: 155%;
+    border: rem(1px) solid $primary;
+    transition: all $transition linear;
+
+    &:not(:last-child) {
+      margin-bottom: rem(30px);
+      @include media-md(down) {
+        margin-bottom: rem(15px);
+      }
+    }
+
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+    }
+  }
+
+  &__title {
+    font-family: $font-family-second;
+    font-weight: normal;
+    color: currentColor;
+
+    &:not(:last-child) {
+      margin-bottom: rem(9px);
+      line-height: 1.35;
+      @include media-lg(down) {
+        margin-bottom: rem(10px);
+      }
+    }
+  }
+
+  &__title {
+    font-size: $font-size-base * 1.25;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    @include media-xl(down) {
+      font-size: $font-size-base * 1.125;
+    }
+    @include media-lg(down) {
+      font-size: $font-size-base;
+    }
+    @include media-sm(down) {
+      font-size: $font-size-base * 0.75;
+    }
+  }
+
+  &:hover {
+    color: $black;
+
+    .catalog-product {
+      &__photo {
+        border-color: $black;
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+<svg width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="40" height="40" rx="20" fill="currentColor" />
+    <path
+        d="M28.25 14.75h-16.5a.75.75 0 00-.75.75v12c0 .414.336.75.75.75h16.5a.75.75 0 00.75-.75v-12a.75.75 0 00-.75-.75z"
+        stroke="#fff" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M16.25 17.75v-3a3.75 3.75 0 017.5 0v3" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" />
+</svg>

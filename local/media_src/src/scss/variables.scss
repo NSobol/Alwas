@@ -1,0 +1,101 @@
+@import 'utilites/rem';
+@import 'utilites/mixins';
+@import 'utilites/media-queries';
+
+$white: #fff !default;
+$black: #000 !default;
+$primary: #FAF9F7 !default;
+$secondary: #CCCCCC !default;
+
+$dark: #4E2417 !default;
+$accent: #F55308 !default;
+$light: #F9F7F1 !default;
+
+$success: #488D3D !default;
+$info: #17a2b8 !default;
+$warning: #ffc107 !default;
+$error: #dc3545 !default;
+$gray: #999999 !default;
+$transition: 50ms !default;
+
+$link-color: $primary !default;
+$link-decoration: none !default;
+$font-family-base: "Nunito Sans", Arial, sans-serif !default;
+$font-family-second: "Nunito Sans", Arial, sans-serif !default;
+
+$font-size-base: rem(16px) !default;
+$font-line-base: 1.15 !default;
+$font-weight-normal: 400 !default;
+
+$h1-font-size: 96px;
+$h2-font-size: 50px !default;
+$h3-font-size: 36px !default;
+$h4-font-size: 30px !default;
+$h5-font-size: 24px !default;
+$h6-font-size: 20px !default;
+
+
+$xs: 375px !default;
+$sm: 576px !default;
+$md: 768px !default;
+$lg: 992px !default;
+$xl: 1200px !default;
+$xxl: 1400px !default;
+$xs-down: 374.98px !default;
+$sm-down: 575.98px !default;
+$md-down: 767.98px !default;
+$lg-down: 991.98px !default;
+$xl-down: 1199.98px !default;
+$xxl-down: 1399.98px !default;
+
+$spacer: rem(15px) !default;
+$spacers: (
+        0: 0,
+        1: $spacer,
+        2: $spacer * 2,
+        3: $spacer * 3,
+        4: $spacer * 4,
+        5: $spacer * 5,
+        20: rem(20px),
+        30: rem(30px),
+        40: rem(40px),
+) !default;
+
+$grid-breakpoints: (
+        xs: 0,
+        sm: $sm,
+        md: $md,
+        lg: $lg,
+        xl: $xl,
+        xxl: $xxl
+) !default;
+
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1140px,
+        xxl: 1810px
+) !default;
+$displays: (
+        'inline',
+        'inline-block',
+        'block',
+            //'table',
+            //'table-row',
+            //'table-cell',
+        'flex',
+        'inline-flex',
+        'none'
+) !default;
+
+
+$container-width: $xxl !default;
+$grid-columns: 12 !default;
+$grid-row-columns: 6 !default;
+$grid-gutter-width: 30px !default;
+$gutters: $spacers !default;
+$container-padding-x: $grid-gutter-width !default;
+$enable-grid-classes: true !default;
+$enable-cssgrid: false !default;
+$variable-prefix: bs- !default;

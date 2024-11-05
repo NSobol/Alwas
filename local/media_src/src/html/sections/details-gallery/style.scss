@@ -1,0 +1,29 @@
+.details-gallery {
+    overflow: hidden;
+    padding-bottom: 120px;
+    @include media-md('down') {
+        padding-bottom: 80px;
+    }
+}
+.dtg-swiper {
+    overflow: visible;
+}
+.dtg-slide {
+    height: 500px;
+    width: auto;
+    padding: 0;
+    border-radius: 8px;
+    background-color: $light;
+    border: 2px solid $light;
+    @include media-md('down') {
+        height: 280px;
+    }
+    picture, img {
+        display: block;
+        height: 100%;
+        width: auto;
+    }
+    img {
+        border-radius: 8px;
+    }
+}

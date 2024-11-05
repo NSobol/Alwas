@@ -1,0 +1,59 @@
+.faq-block {
+  &:not(:first-child) {
+    padding-top: rem(46px);
+    @include media-md(down) {
+      padding-top: rem(30px);
+    }
+  }
+
+  &__button {
+    display: block;
+    width: 100%;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+    outline: none;
+    color: $black;
+
+    &:focus,
+    &:active {
+      outline: none;
+    }
+
+    .z4 {
+      @include media-md(down) {
+        font-size: rem($font-size-base * 1.125);
+      }
+    }
+
+    .plus {
+      width: rem(32px);
+      height: rem(22px);
+      transition: all $transition ease-in-out;
+    }
+
+    &.is-open {
+      svg {
+        &.plus {
+          transform: rotate(45deg);
+        }
+      }
+    }
+  }
+
+  &__content {
+    margin-top: rem(25px);
+    padding: rem(40px 46px);
+    background-color: $primary;
+    color: $gray;
+    font-size: rem($font-size-base);
+    line-height: 160%;
+    @include media-md(down) {
+      margin-top: rem(10px);
+      padding: rem(24px);
+      font-size: rem($font-size-base * 0.875);
+    }
+  }
+}

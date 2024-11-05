@@ -1,0 +1,113 @@
+.responsibility {
+  padding: 50px 0;
+}
+
+@media screen and (max-width: 575.98px) {
+  .responsibility {
+    padding: 24px 0;
+  }
+}
+
+.responsibility-content {
+  background: #F9F7F1;
+  border-radius: 8px;
+  padding: 50px;
+}
+
+@media screen and (max-width: 1199.98px) {
+  .responsibility-content {
+    padding: 32px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .responsibility-content {
+    padding: 24px 16px;
+  }
+}
+
+.responsibility__title {
+  font-size: 30px;
+  line-height: 1.3;
+  color: #4E2417;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 767.98px) {
+  .responsibility__title {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+}
+
+.responsibility-items {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 767.98px) {
+  .responsibility-items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.responsibility-item {
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 8px;
+  width: calc(33.3333% - 25px);
+}
+
+@media screen and (max-width: 1199.98px) {
+  .responsibility-item {
+    width: calc(33.3333% - 16px);
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .responsibility-item {
+    width: 100%;
+    padding: 24px 16px;
+    margin-bottom: 24px;
+  }
+  .responsibility-item:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.responsibility-item__picture {
+  margin-bottom: 24px;
+}
+
+.responsibility-item__picture img {
+  display: block;
+  margin: 0 auto;
+}
+
+.responsibility-item__text {
+  font-size: 24px;
+  line-height: 1.3;
+  color: #4E2417;
+}
+
+@media screen and (max-width: 1199.98px) {
+  .responsibility-item__text {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .responsibility-item__text {
+    font-size: 16px;
+  }
+}

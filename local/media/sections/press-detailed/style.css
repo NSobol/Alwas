@@ -1,0 +1,7 @@
+.press-detailed p {
+  font-size: 1.125rem;
+}
+
+.press-detailed__gallery > .row > * img {
+  width: 100%;
+}

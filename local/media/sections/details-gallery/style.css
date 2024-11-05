@@ -1,0 +1,39 @@
+.details-gallery {
+  overflow: hidden;
+  padding-bottom: 120px;
+}
+
+@media screen and (max-width: 767.98px) {
+  .details-gallery {
+    padding-bottom: 80px;
+  }
+}
+
+.dtg-swiper {
+  overflow: visible;
+}
+
+.dtg-slide {
+  height: 500px;
+  width: auto;
+  padding: 0;
+  border-radius: 8px;
+  background-color: #F9F7F1;
+  border: 2px solid #F9F7F1;
+}
+
+@media screen and (max-width: 767.98px) {
+  .dtg-slide {
+    height: 280px;
+  }
+}
+
+.dtg-slide picture, .dtg-slide img {
+  display: block;
+  height: 100%;
+  width: auto;
+}
+
+.dtg-slide img {
+  border-radius: 8px;
+}

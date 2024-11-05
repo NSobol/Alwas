@@ -1,0 +1,15 @@
+.press-detailed {
+  p {
+    font-size: rem($font-size-base * 1.125);
+  }
+
+  &__gallery {
+    & > .row {
+      & > * {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

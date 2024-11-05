@@ -1,0 +1,208 @@
+.product-slider {
+  position: relative;
+
+  &__arrow {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% + 10px*5.5);
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50%;
+    height: 0;
+    overflow: visible;
+    z-index: 5;
+    @media screen and (max-width: get($container-max-widths, xxl)) {
+      width: calc(100% + 24px*2);
+    }
+
+    &-item {
+      position: relative;
+      z-index: 5;
+      border: 0;
+      background: transparent;
+      margin: 0;
+      padding: rem(10px);
+      transition: all $transition ease-in-out;
+
+      svg {
+        width: 32px;
+        height: 21px;
+        transition: all $transition ease-in-out;
+      }
+
+      &.swiper-button-disabled {
+        pointer-events: none;
+
+        svg {
+          fill: $gray;
+        }
+      }
+
+      &:hover {
+        @include media-xl(up) {
+          transform: scale(1.21);
+        }
+      }
+
+      &:active {
+        &:first-child {
+          margin-left: -10px;
+        }
+        
+        &:last-child {
+          margin-right: -10px;
+        }
+      }
+    }
+  }
+
+  &__item {
+    display: block;
+    text-decoration: none;
+    color: $black;
+    transition: color $transition linear;
+    
+    &-photo {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      padding-bottom: 155%;
+      border: rem(1px) solid $primary;
+      transition: all $transition linear;
+  
+      &:not(:last-child) {
+        margin-bottom: rem(30px);
+        @include media-md(down) {
+          margin-bottom: rem(15px);
+        }
+      }
+  
+      &-favorite {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: rem(30px);
+        right: rem(30px);
+        z-index: 5;
+        transition: all 0.15s ease-in-out;
+        padding: 0;
+        margin: 0;
+        border: 0;
+        background: transparent;
+  
+        &:hover {
+          transform: scale(1.2);
+        }
+  
+        svg {
+          pointer-events: none;
+          fill: transparent;
+          stroke: $black;
+          stroke-width: rem(1px);
+          width: rem(20px);
+          height: rem(20px);
+        }
+  
+        &.is-selected {
+          svg {
+            stroke-width: 0;
+            stroke: transparent;
+            fill: $black;
+          }
+        }
+      }
+  
+      img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+      }
+    }
+  
+    &-title,
+    &-price {
+      font-family: $font-family-second;
+      font-weight: normal;
+      color: currentColor;
+  
+      &:not(:last-child) {
+        margin-bottom: rem(9px);
+        line-height: 1.35;
+        @include media-lg(down) {
+          margin-bottom: rem(10px);
+        }
+      }
+    }
+  
+    &-title {
+      font-size: $font-size-base * 1.25;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      @include media-xl(down) {
+        font-size: $font-size-base * 1.125;
+      }
+      @include media-lg(down) {
+        font-size: $font-size-base;
+      }
+      @include media-sm(down) {
+        font-size: $font-size-base * 0.75;
+      }
+    }
+  
+    &-price {
+      @include media-sm(down) {
+        font-size: $font-size-base * 0.875;
+      }
+    }
+  
+    &-action {
+      padding: rem(10px 0 8px);
+      position: relative;
+      font-size: $font-size-base * 0.875;
+      line-height: 1.36;
+      text-transform: uppercase;
+      @include media-sm(down) {
+        font-size: $font-size-base * 0.625;
+        padding: rem(0 0 4px);
+      }
+  
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: rem(1px);
+        left: 0;
+        bottom: 0;
+        background-color: $black;
+        transition: all $transition ease-in-out;
+      }
+  
+      &:hover {
+        &::after {
+          @include media-sm(up) {
+            bottom: rem(4px);
+          }
+        }
+      }
+    }
+  
+    &:hover {
+      color: $black;
+  
+      .catalog-product {
+        &__item-photo {
+          border-color: $black;
+        }
+      }
+    }
+  }
+}

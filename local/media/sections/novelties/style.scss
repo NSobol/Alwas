@@ -1,0 +1,22 @@
+.novelties {
+    padding-top: 130px;
+    //padding-bottom: 120px;
+    @include media-xl('down') {
+        padding-top: 80px;
+        //padding-bottom: 80px;
+    }
+}
+.nov-swiper {
+    padding-bottom: 42px;
+    @include media-xl('down') {
+        padding-bottom: 30px;
+    }
+    .swiper-progress {
+        position: absolute;
+        z-index: 3;
+        top: unset;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+}

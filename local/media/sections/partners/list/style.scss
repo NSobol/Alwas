@@ -1,0 +1,131 @@
+.pnslist {
+    overflow: hidden;
+
+    .pnslist-block {
+
+        &:nth-child(2n) {
+            .pnslist-block-row {
+                flex-direction: row-reverse;
+            }
+        }
+    }
+
+    &-block {
+
+        &-row {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: -20px;
+
+            @include media-xl(down) {
+                margin: -10px;
+            }
+
+            @include media-md(down) {
+                margin: -12px;
+            }
+        }
+
+        &-col {
+            padding: 20px;
+            width: 50%;
+
+            @include media-xl(down) {
+                padding: 10px;
+            }
+
+            @include media-md(down) {
+                padding: 12px;
+                width: 100%;
+            }
+        }
+
+        picture {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @include media-md(down) {
+                padding: 54px 0;
+            }
+
+            img {
+                @include media-md(down) {
+                    width: 180px;
+                    max-width: 100%;
+                }
+            }
+        }
+
+        video {
+            display: block;
+            align-items: center;
+            justify-content: center;
+            max-width: 100%;
+            max-height: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            outline: 3px solid white !important;
+            outline-offset: 1px;
+            filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'brightness\'><feColorMatrix type=\'matrix\' values=\'1.2 0 0 0 0 0 1.2 0 0 0 0 0 1.2 0 0 0 0 0 1.2 0\'/></filter></svg>#brightness");
+            -webkit-filter: brightness(108.5%);
+            //border: 2px solid white;
+        }
+
+        &__container {
+            padding: 100px;
+            background: #F9F7F1;
+            border-radius: 8px;
+
+            @include media-xl(down) {
+                padding: 24px;
+            }
+
+            @include media-md(down) {
+                padding: 24px 16px;
+            }
+        }
+
+        &__title {
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 130%;
+            color: #000000;
+            margin-bottom: 30px;
+
+            @include media-md(down) {
+                font-size: 24px;
+                margin-bottom: 24px;
+            }
+        }
+
+        &__descr {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 150%;
+            color: #000000;
+            opacity: 0.6;
+            margin-bottom: 30px;
+            hyphens: none;
+
+            @include media-lg('down') {
+                font-size: 18px;
+            }
+
+            @include media-md('down') {
+                margin-bottom: 24px;
+            }
+
+            &--black {
+                opacity: 1;
+            }
+
+            p {
+                hyphens: none;
+            }
+
+
+        }
+    }
+}

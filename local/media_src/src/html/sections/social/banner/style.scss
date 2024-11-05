@@ -1,0 +1,60 @@
+.socbanner {
+  padding: 50px 0;
+  overflow: hidden;
+
+  @include media-sm(down) {
+    padding: 24px 0;
+  }
+
+  &-block {
+    padding: 50px 16px;
+    background: #F9F7F1;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include media-md(down) {
+      padding: 24px 16px;
+    }
+
+    &__inner {
+      width: 840px;
+      max-width: 100%;
+      padding-left: 40px;
+      border-left: 2px solid #F55308;
+
+      @include media-xl(down) {
+        padding-left: 16px;
+      }
+    }
+
+    &__info {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 130%;
+      color: #4E2417;
+      margin-bottom: 24px;
+
+      @include media-xl(down) {
+        font-size: 16px;
+      }
+    }
+
+    &__title {
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 130%;
+      color: #F55308;
+
+      @include media-xl(down) {
+        font-size: 32px;
+      }
+
+      @include media-md(down) {
+        font-size: 24px;
+      }
+    }
+  }
+}

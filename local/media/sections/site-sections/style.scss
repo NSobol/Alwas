@@ -1,0 +1,242 @@
+.site-sections {
+    padding-top: 100px;
+
+    @include media-xl('down') {
+        padding-top: 40px;
+    }
+}
+
+.ss-grid {
+    display: grid;
+    grid-template-columns: 50% 1fr 1fr;
+    gap: 20px;
+    grid-template-areas:
+        'ss-ideas ss-pans ss-pots'
+        'ss-ideas ss-buckets ss-roasters'
+        'ss-sets ss-hardware ss-hardware';
+
+    @include media-xl('down') {
+        gap: 10px;
+        grid-template-columns: 50% 1fr 1fr;
+    }
+
+    @include media-sm('down') {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            'ss-ideas ss-ideas'
+            'ss-pans ss-pots'
+            'ss-pans ss-roasters'
+            'ss-buckets ss-roasters'
+            'ss-buckets ss-hardware'
+            'ss-sets ss-hardware'
+        ;
+    }
+
+    &__link {
+        display: block;
+        position: relative;
+        padding-bottom: 100%;
+        width: auto;
+        border-radius: 8px;
+        align-items: stretch;
+        overflow: hidden;
+
+        &::after {
+            position: absolute;
+            content: '';
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-image: linear-gradient(125deg, #f55308, transparent);
+            z-index: 2;
+            opacity: 0;
+            transition: 50ms linear;
+        }
+
+        &:hover {
+            &::after {
+                opacity: 0.1;
+            }
+        }
+
+        &.ss-ideas {
+            grid-area: ss-ideas;
+
+            @include media-sm('down') {
+                padding-bottom: 48.333%;
+            }
+        }
+
+        &.ss-pans {
+            grid-area: ss-pans;
+
+            @include media-sm('down') {
+                padding-bottom: 137.931%;
+            }
+        }
+
+        &.ss-pots {
+            grid-area: ss-pots;
+        }
+
+        &.ss-buckets {
+            grid-area: ss-buckets;
+
+            @include media-sm('down') {
+                padding-bottom: 137.931%;
+            }
+        }
+
+        &.ss-roasters {
+            grid-area: ss-roasters;
+
+            @include media-sm('down') {
+                padding-bottom: 137.931%;
+            }
+        }
+
+        &.ss-sets {
+            grid-area: ss-sets;
+            padding-bottom: 48.649%;
+
+            @include media-sm('down') {
+                padding-bottom: 100%;
+            }
+        }
+
+        &.ss-hardware {
+            grid-area: ss-hardware;
+            padding-bottom: 48.649%;
+
+            @include media-sm('down') {
+                padding-bottom: 137.931%;
+            }
+        }
+    }
+
+    &__pic {
+
+        &,
+        &>img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 8px;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+        }
+    }
+
+    &__txt {
+        position: absolute;
+        bottom: 40px;
+        right: 15px;
+        left: 15px;
+        color: $white;
+        text-align: center;
+        font-size: 30px;
+        line-height: 1;
+        font-weight: 400;
+
+        @include media-xl('down') {
+            font-size: 18px;
+            bottom: 15px;
+        }
+    }
+
+    &--cat {
+        .ss-grid__link>svg {
+            display: none;
+        }
+
+        @include media-sm('down') {
+            grid-template-areas:
+                'ss-ideas ss-ideas'
+                'ss-sets ss-pans'
+                'ss-sets ss-buckets'
+                'ss-pots ss-buckets'
+                'ss-pots ss-hardware'
+                'ss-roasters ss-hardware'
+            ;
+
+            .ss-grid__link {
+                &>svg {
+                    display: block;
+                    position: absolute;
+                    top: 5px;
+                    right: 5px;
+                    width: 30px;
+                    height: 30px;
+                    z-index: 5;
+                }
+
+                &.ss-ideas {
+                    padding-bottom: 48.33%;
+                }
+
+                &.ss-sets {
+                    padding-bottom: 131.034%;
+                }
+
+                &.ss-sets {
+                    padding-bottom: 131.034%;
+                }
+
+                &.ss-pans {
+                    padding-bottom: 100%;
+                }
+
+                &.ss-pots {
+                    padding-bottom: 100%;
+                }
+
+                &.ss-buckets {
+                    padding-bottom: 100%;
+                }
+
+                &.ss-roasters {
+                    padding-bottom: 100%;
+                }
+
+                &.ss-hardware {
+                    padding-bottom: 131.034%;
+                }
+            }
+        }
+
+        @include media-sm('down') {
+            .ss-grid__txt {
+                font-size: 14px;
+                text-align-last: left;
+            }
+
+            .ss-grid__pic {
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: unset;
+                    right: 0;
+                    left: 0;
+                    bottom: 0;
+                    height: 50px;
+                    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+                }
+            }
+        }
+    }
+}

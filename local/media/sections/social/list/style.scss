@@ -1,0 +1,94 @@
+.soclist {
+  padding: 50px 0;
+  overflow: hidden;
+
+  @include media-sm(down) {
+    padding: 24px 0;
+  }
+
+  &-block {
+    &+& {
+      @include media-xl(down) {
+        margin-top: 48px;
+      }
+    }
+
+    &-row {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: -20px;
+
+      @include media-xl(down) {
+        margin: -12px;
+      }
+    }
+
+    &-col {
+      padding: 20px;
+      width: 50%;
+
+      @include media-xl(down) {
+        padding: 12px;
+        width: 100%;
+      }
+    }
+
+    &__content {
+      padding: 24px 100px;
+      width: 730px;
+      max-width: 100%;
+      margin: 0 auto;
+
+      @include media-xl(down) {
+        padding: 0;
+        width: 100%;
+      }
+    }
+
+    picture {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+
+      img {
+        width: 465px;
+        height: 100%;
+      }
+    }
+
+    &__descr {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 130%;
+      color: #000000;
+
+      @include media-xl(down) {
+        font-size: 24px;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: rem(30px);
+
+        @include media-xl(down) {
+          margin-bottom: 24px;
+        }
+      }
+    }
+
+    &__link {
+      a {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 150%;
+        color: #F55308;
+        opacity: 0.6;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

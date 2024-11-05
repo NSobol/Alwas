@@ -1,0 +1,54 @@
+.services-page {
+  overflow: hidden;
+}
+
+.services-block {
+  background-color: $primary;
+  padding: rem(22px 22px 22px 50px);
+  min-height: rem(444px);
+  display: flex;
+  flex-direction: column;
+  @include media-md(down) {
+    padding: rem(44px 30px);
+  }
+
+  &:not(:last-child) {
+    margin-bottom: rem(10px);
+  }
+
+  &__picture {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    overflow: hidden;
+
+    img {
+      object-fit: cover;
+      object-position: center;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      display: block;
+    }
+  }
+
+  .z4 {
+    @include media-md(down) {
+      font-size: rem($font-size-base * 1.125);
+      margin-bottom: rem(20px);
+    }
+  }
+
+  p {
+    font-size: rem($font-size-base);
+  }
+
+  .row {
+    flex: 1 1 auto;
+    @include media-md(down) {
+      flex-direction: column-reverse;
+    }
+  }
+}
