@@ -31,7 +31,7 @@
 				<div class="container">
 					<div class="hm-left">
 						<button class="burger d-xl-none" data-mobile-menu="toggle">
-							<div class="burger__container">
+							Каталог							<div class="burger__container">
 								<span></span>
 								<span></span>
 								<span></span>
@@ -68,12 +68,78 @@
 							</svg> </a>
 					</div>
 
-					<div class="search-block">
+					<div class="header__nav d-none d-xl-block">
+						<div class="container">
+							<nav class="navbar">
+								<ul>
+									<li>
+										<div>
+											<a href="/about/">
+												<span>О бренде</span>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div>
+											<a href="/manufacture/">
+												<span>О производстве</span>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div>
+											<a href="/delivery/">
+												<span>Доставка и оплата</span>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div>
+											<a href="/return/">
+												<span>Обмен и возврат</span>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div>
+											<a href="/blog/">
+												<span>Блог</span>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div>
+											<a href="/contacts/">
+												<span>Контакты</span>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div>
+											<a href="/promo/">
+												<span>Акции ⚡</span>
+											</a>
+										</div>
+									</li>
+									<li>
+										<button type="button" class="header-search-toggle reset-btn"
+											data-header-search-button="open">
+											<svg>
+												<use xlink:href="/local/media/images/icons.svg#search"></use>
+											</svg>
+										</button>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+
+					<!-- <div class="search-block">
 						<form action="/search" method="get">
 							<input type="text" name="query" placeholder="Искать товары" class="search-block-inp">
 							<button type="submit" class="search-block-btn"></button>
 						</form>
-					</div>
+					</div> -->
 
 
 					<div class="hm-right">
@@ -126,71 +192,7 @@
 			</div>
 		</div>
 
-		<div class="header__nav d-none d-xl-block">
-			<div class="container">
-				<nav class="navbar">
-					<ul>
-						<li>
-							<div>
-								<a href="/about/">
-									<span>О бренде</span>
-								</a>
-							</div>
-						</li>
-						<li>
-							<div>
-								<a href="/manufacture/">
-									<span>О производстве</span>
-								</a>
-							</div>
-						</li>
-						<li>
-							<div>
-								<a href="/delivery/">
-									<span>Доставка и оплата</span>
-								</a>
-							</div>
-						</li>
-						<li>
-							<div>
-								<a href="/return/">
-									<span>Обмен и возврат</span>
-								</a>
-							</div>
-						</li>
-						<li>
-							<div>
-								<a href="/blog/">
-									<span>Блог</span>
-								</a>
-							</div>
-						</li>
-						<li>
-							<div>
-								<a href="/contacts/">
-									<span>Контакты</span>
-								</a>
-							</div>
-						</li>
-						<li>
-							<div>
-								<a href="/promo/">
-									<span>Акции ⚡</span>
-								</a>
-							</div>
-						</li>
-						<li>
-							<button type="button" class="header-search-toggle reset-btn"
-								data-header-search-button="open">
-								<svg>
-									<use xlink:href="/local/media/images/icons.svg#search"></use>
-								</svg>
-							</button>
-						</li>
-					</ul>
-				</nav>
-			</div>
-		</div>
+
 
 		<div class="header-menu" data-header="menu" style="top: 125px;">
 
@@ -3095,266 +3097,6 @@
 			</div>
 		</div>
 	</footer>
-
-	<!-- 
-	<div class="bottom-menu">
-		<div class="container bmu-list">
-			<div class="bmu-list__item">
-				<a href="/" class="bmu-link is-selected">
-					<svg xmlns="http://www.w3.org/2000/svg">
-						<use xlink:href="/local/media/images/icons.svg#house"></use>
-					</svg>
-					<span>Главная</span>
-				</a>
-			</div>
-			<div class="bmu-list__item">
-				<a href="/catalog/" class="bmu-link">
-					<svg xmlns="http://www.w3.org/2000/svg">
-						<use xlink:href="/local/media/images/icons.svg#list"></use>
-					</svg>
-					<span>Каталог</span>
-				</a>
-			</div>
-			<div class="bmu-list__item" small-basket="" small-basket-mobile="">
-				<a href="/personal/cart/" class="bmu-link">
-					<svg xmlns="http://www.w3.org/2000/svg">
-						<use xlink:href="/local/media/images/icons.svg#bag"></use>
-					</svg>
-					<span>Корзина</span>
-				</a>
-				<div class="bmu-link__counter" small-basket-count="">
-					0 </div>
-			</div>
-			<div class="bmu-list__item">
-				<a href="/promo/" class="bmu-link">
-					<svg xmlns="http://www.w3.org/2000/svg">
-						<use xlink:href="/local/media/images/icons.svg#percent"></use>
-					</svg>
-					<span>Акции</span>
-				</a>
-			</div>
-			<div class="bmu-list__item">
-				<a href="/personal/" class="bmu-link">
-					<svg xmlns="http://www.w3.org/2000/svg">
-						<use xlink:href="/local/media/images/icons.svg#user-simple"></use>
-					</svg>
-					<span>Профиль</span>
-				</a>
-			</div>
-		</div>
-	</div> -->
-
-	<script>(function (w, d, s, l, i) {
-			w[l] = w[l] || []; w[l].push({
-				'gtm.start':
-					new Date().getTime(), event: 'gtm.js'
-			}); var f = d.getElementsByTagName(s)[0],
-				j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-					'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-		})(window, document, 'script', 'dataLayer', 'GTM-NXSMVJ8P');</script>
-	<script>if (!window.BX) window.BX = {}; if (!window.BX.message) window.BX.message = function (mess) { if (typeof mess === 'object') { for (let i in mess) { BX.message[i] = mess[i]; } return true; } };</script>
-	<script>(window.BX || top.BX).message({ "pull_server_enabled": "Y", "pull_config_timestamp": 1687339592, "pull_guest_mode": "N", "pull_guest_user_id": 0 }); (window.BX || top.BX).message({ "PULL_OLD_REVISION": "Для продолжения корректной работы с сайтом необходимо перезагрузить страницу." });</script>
-	<script>(window.BX || top.BX).message({ "JS_CORE_LOADING": "Загрузка...", "JS_CORE_NO_DATA": "- Нет данных -", "JS_CORE_WINDOW_CLOSE": "Закрыть", "JS_CORE_WINDOW_EXPAND": "Развернуть", "JS_CORE_WINDOW_NARROW": "Свернуть в окно", "JS_CORE_WINDOW_SAVE": "Сохранить", "JS_CORE_WINDOW_CANCEL": "Отменить", "JS_CORE_WINDOW_CONTINUE": "Продолжить", "JS_CORE_H": "ч", "JS_CORE_M": "м", "JS_CORE_S": "с", "JSADM_AI_HIDE_EXTRA": "Скрыть лишние", "JSADM_AI_ALL_NOTIF": "Показать все", "JSADM_AUTH_REQ": "Требуется авторизация!", "JS_CORE_WINDOW_AUTH": "Войти", "JS_CORE_IMAGE_FULL": "Полный размер" });</script>
-	<script src="/bitrix/js/main/core/core.min.js?1727956946225181"></script>
-	<script>BX.Runtime.registerExtension({ "name": "main.core", "namespace": "BX", "loaded": true });</script>
-	<script>BX.setJSList(["\/bitrix\/js\/main\/core\/core_ajax.js", "\/bitrix\/js\/main\/core\/core_promise.js", "\/bitrix\/js\/main\/polyfill\/promise\/js\/promise.js", "\/bitrix\/js\/main\/loadext\/loadext.js", "\/bitrix\/js\/main\/loadext\/extension.js", "\/bitrix\/js\/main\/polyfill\/promise\/js\/promise.js", "\/bitrix\/js\/main\/polyfill\/find\/js\/find.js", "\/bitrix\/js\/main\/polyfill\/includes\/js\/includes.js", "\/bitrix\/js\/main\/polyfill\/matches\/js\/matches.js", "\/bitrix\/js\/ui\/polyfill\/closest\/js\/closest.js", "\/bitrix\/js\/main\/polyfill\/fill\/main.polyfill.fill.js", "\/bitrix\/js\/main\/polyfill\/find\/js\/find.js", "\/bitrix\/js\/main\/polyfill\/matches\/js\/matches.js", "\/bitrix\/js\/main\/polyfill\/core\/dist\/polyfill.bundle.js", "\/bitrix\/js\/main\/core\/core.js", "\/bitrix\/js\/main\/polyfill\/intersectionobserver\/js\/intersectionobserver.js", "\/bitrix\/js\/main\/lazyload\/dist\/lazyload.bundle.js", "\/bitrix\/js\/main\/polyfill\/core\/dist\/polyfill.bundle.js", "\/bitrix\/js\/main\/parambag\/dist\/parambag.bundle.js"]);
-	</script>
-	<script>BX.Runtime.registerExtension({ "name": "fx", "namespace": "window", "loaded": true });</script>
-	<script>(window.BX || top.BX).message({ "LANGUAGE_ID": "ru", "FORMAT_DATE": "DD.MM.YYYY", "FORMAT_DATETIME": "DD.MM.YYYY HH:MI:SS", "COOKIE_PREFIX": "BITRIX_SM", "SERVER_TZ_OFFSET": "10800", "UTF_MODE": "Y", "SITE_ID": "s1", "SITE_DIR": "\/", "USER_ID": "", "SERVER_TIME": 1730225368, "USER_TZ_OFFSET": 0, "USER_TZ_AUTO": "Y", "bitrix_sessid": "581900aca937cab5558ebe5c3e3c0eb8" });</script>
-	<script src="/bitrix/cache/js/s1/template/kernel_main/kernel_main_v1.js?1730192745193487"></script>
-	<script src="/bitrix/js/pull/protobuf/protobuf.min.js?167639536376433"></script>
-	<script src="/bitrix/js/pull/protobuf/model.min.js?167639536314190"></script>
-	<script src="/bitrix/js/main/core/core_promise.min.js?16763953602490"></script>
-	<script src="/bitrix/js/rest/client/rest.client.min.js?16763953589240"></script>
-	<script src="/bitrix/js/pull/client/pull.client.min.js?172370381749664"></script>
-	<script src="//api-maps.yandex.ru/2.1/?apikey=8abd1bc7-376e-44c9-87a5-580520407236&amp;lang=ru_RU"></script>
-	<script src="/bitrix/js/yandex.metrika/script.js?17264844596603"></script>
-	<script>BX.setJSList(["\/bitrix\/js\/main\/core\/core_fx.js", "\/bitrix\/js\/main\/session.js", "\/bitrix\/js\/main\/pageobject\/pageobject.js", "\/bitrix\/js\/main\/core\/core_window.js", "\/bitrix\/js\/main\/date\/main.date.js", "\/bitrix\/js\/main\/core\/core_date.js", "\/bitrix\/js\/main\/utils.js", "\/bitrix\/js\/main\/dd.js", "\/bitrix\/js\/main\/core\/core_uf.js", "\/bitrix\/js\/main\/core\/core_dd.js", "\/bitrix\/js\/main\/core\/core_tooltip.js", "\/local\/media\/js\/library.js", "\/local\/media\/js\/lozad\/lozad.min.js", "\/local\/media\/js\/global.js", "\/local\/media\/js\/sections.min.js"]);</script>
-	<script>BX.setCSSList(["\/local\/media\/css\/library.css", "\/local\/media\/css\/sections.css", "\/local\/media\/css\/base.css", "\/local\/media\/css\/custom.css", "\/local\/templates\/.default\/components\/bitrix\/menu\/header-menu\/style.css", "\/local\/templates\/.default\/components\/bitrix\/subscribe.form\/subscribe\/style.css", "\/local\/templates\/template\/template_styles.css", "\/local\/media\/sections\/hero\/style.css", "\/local\/media\/sections\/site-sections\/style.css", "\/local\/media\/sections\/novelties\/style.css", "\/local\/media\/sections\/advantages\/style.css", "\/local\/media\/sections\/consultation\/style.css"]);</script>
-	<script type="text/javascript">
-		window.dataLayerName = 'dataLayer';
-		var dataLayerName = window.dataLayerName;
-	</script>
-	<script type="text/javascript">
-		(function (m, e, t, r, i, k, a) {
-			m[i] = m[i] || function () {
-				(m[i].a = m[i].a || []).push(arguments)
-			};
-			m[i].l = 1 * new Date();
-			k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
-		})
-			(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-		ym("92450185", "init", {
-			clickmap: true,
-			trackLinks: true,
-			accurateTrackBounce: true,
-			webvisor: true,
-			ecommerce: dataLayerName,
-			params: {
-				__ym: {
-					"ymCmsPlugin": {
-						"cms": "1c-bitrix",
-						"cmsVersion": "24.100",
-						"pluginVersion": "1.0.8",
-						'ymCmsRip': 1520893461
-					}
-				}
-			}
-		});
-
-		document.addEventListener("DOMContentLoaded", function () {
-		});
-
-	</script>
-	<script type="text/javascript">
-		window.dataLayerName = 'dataLayer';
-		var dataLayerName = window.dataLayerName;
-	</script>
-	<script type="text/javascript">
-		(function (m, e, t, r, i, k, a) {
-			m[i] = m[i] || function () {
-				(m[i].a = m[i].a || []).push(arguments)
-			};
-			m[i].l = 1 * new Date();
-			k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
-		})
-			(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-		ym("98189232", "init", {
-			clickmap: true,
-			trackLinks: true,
-			accurateTrackBounce: true,
-			webvisor: true,
-			ecommerce: dataLayerName,
-			params: {
-				__ym: {
-					"ymCmsPlugin": {
-						"cms": "1c-bitrix",
-						"cmsVersion": "24.100",
-						"pluginVersion": "1.0.8",
-						'ymCmsRip': 1520893461
-					}
-				}
-			}
-		});
-
-		document.addEventListener("DOMContentLoaded", function () {
-		});
-
-	</script>
-	<script type="text/javascript">
-		window.counters = ["92450185", "98189232"];
-	</script>
-	<script>
-		(function () {
-			"use strict";
-
-			var counter = function () {
-				var cookie = (function (name) {
-					var parts = ("; " + document.cookie).split("; " + name + "=");
-					if (parts.length == 2) {
-						try { return JSON.parse(decodeURIComponent(parts.pop().split(";").shift())); }
-						catch (e) { }
-					}
-				})("BITRIX_CONVERSION_CONTEXT_s1");
-
-				if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
-					return;
-
-				var request = new XMLHttpRequest();
-				request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
-				request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-				request.send(
-					"SITE_ID=" + encodeURIComponent("s1") +
-					"&sessid=" + encodeURIComponent(BX.bitrix_sessid()) +
-					"&HTTP_REFERER=" + encodeURIComponent(document.referrer)
-				);
-			};
-
-			if (window.frameRequestStart === true)
-				BX.addCustomEvent("onFrameDataReceived", counter);
-			else
-				BX.ready(counter);
-		})();
-	</script>
-	<script>; window.ww_metrics_check = false; setInterval(function () { window.ww_metrics_check = false; }, 5000); function ww_metrics_postcheck() { if (!window.ww_metrics_check) { window.ww_metrics_check = true; let request = new XMLHttpRequest(); let formData = 'sessid=' + BX.bitrix_sessid() + '&cur_page=/index.php&use_chat=' + window.ww_is_webchat_show; request.responseType = 'json'; request.open('POST', '/bitrix/components/webway/metrics.simple/wwcheckmetrics.php', true); request.setRequestHeader('Content-type', 'application/x-www-form-urlencoded'); request.addEventListener('readystatechange', function () { if (request.readyState === 4 && request.status === 200) { let data = request.response; } }); request.send(formData); } }; document.addEventListener('mousemove', function () { ww_metrics_postcheck(); }); document.addEventListener('touchmove', function () { ww_metrics_postcheck(); }); document.addEventListener('scroll', function () { ww_metrics_postcheck(); }); window.addEventListener('beforeunload', function () { window.ww_metrics_check = false; ww_metrics_postcheck(); }); window.ww_metrics_check = false; setInterval(function () { window.ww_metrics_check = false; }, 5000);</script>
-	<script>window[window.dataLayerName] = window[window.dataLayerName] || [];</script>
-
-
-
-	<script
-		src="/bitrix/cache/js/s1/template/template_77bc594a140ca72aa6271fa2b47730b3/template_77bc594a140ca72aa6271fa2b47730b3_v1.js?1730189944579121"></script>
-	<script>var _ba = _ba || []; _ba.push(["aid", "ddeaf626d500fc56b7d840d1e8b1c137"]); _ba.push(["host", "alwa-shop.ru"]); (function () { var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true; ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ba, s); })();</script>
-
-
-
-
-	<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-P2470BW442"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
-
-		gtag('config', 'G-P2470BW442');
-	</script>
-	<script type="text/javascript">
-		(function (m, e, t, r, i, k, a) {
-			m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
-			m[i].l = 1 * new Date();
-			for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
-			k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
-		})
-			(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-		ym(92450185, "init", {
-			clickmap: true,
-			trackLinks: true,
-			accurateTrackBounce: true,
-			webvisor: true,
-			ecommerce: "dataLayer"
-		});
-	</script>
-	<script>
-		(function (w, d, s, h, id) {
-			w.roistatProjectId = id; w.roistatHost = h;
-			var p = d.location.protocol == "https:" ? "https://" : "http://";
-			var u = /^.*roistat_visit=[^;]+(.*)?$/.test(d.cookie) ? "/dist/module.js" : "/api/site/1.0/" + id + "/init?referrer=" + encodeURIComponent(d.location.href);
-			var js = d.createElement(s); js.charset = "UTF-8"; js.async = 1; js.src = p + h + u; var js2 = d.getElementsByTagName(s)[0]; js2.parentNode.insertBefore(js, js2);
-		})(window, document, 'script', 'cloud.roistat.com', '1ca582708c5663d34658d1c0a6c81d31');
-	</script>
-	<script>
-		$(document).on('submit', 'form[name="GET_CATALOG"]', function () {
-			var email = $('input#form_text_40').val();
-			var phone = $('input#form_email_41').val();
-			if (phone.length !== 0) {
-				roistatGoal.reach({
-					leadName: 'Получить каталог',
-					phone: phone,
-					email: email,
-					is_skip_sending: 1,
-					fields: {
-						'Тип обращения': 'Получить каталог',
-						'Посадочная страница': '{landingPage}',
-						'Город': '{city}',
-						'Источник': '{source}',
-						'utmSource': '{utmSource}',
-						'utmMedium': '{utmMedium}',
-						'utmCampaign': '{utmCampaign}',
-						'utmTerm': '{utmTerm}',
-						'utmContent': '{utmContent}',
-						'Маркер 1': '{sourceAliasLevel1}',
-						'Маркер 2': '{sourceAliasLevel2}',
-						'Маркер 3': '{sourceAliasLevel3}',
-						'Маркер 4': '{sourceAliasLevel4}',
-						'Маркер 5': '{sourceAliasLevel5}',
-						'Маркер 6': '{sourceAliasLevel6}',
-						'Маркер 7': '{sourceAliasLevel7}'
-					}
-				});
-			}
-		});
-	</script>
 </body>
 
 </html>
